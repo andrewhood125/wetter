@@ -10,26 +10,6 @@ body {
   text-align: center;
 }
 
-#address-submit {
-  cursor: pointer;
-  font-size: 30px;
-  padding: 0 10px;
-  margin-left: -4px;
-  vertical-align: top;
-  line-height: 1.6;
-  margin-bottom: 2px;
-  background-color: #3c4859;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  text-shadow: 1px 1px 1px #000;
-  border: 1px solid #1c3839;
-  color: #babcbc;
-}
-
-#address-submit:hover {
-  text-shadow: 2px 2px 2px #000;
-}
-
 #address-input {
   padding-left: 15px;
   line-height: 1.6;
@@ -52,4 +32,21 @@ body {
 
 #address-input::placeholder {
   color: #5b6968;
+}
+
+#autocomplete-address {
+  text-align: left;
+  margin-top: 20px;
+  margin: auto;
+  color: #babcbc;
+  width: fit-content;
+  line-height: 1.7;
+}
+
+#autocomplete-address div {
+  border-bottom: 1px solid #1C3839;
+}
+
+#autocomplete-address a {
+  color: #dedede;
 }

@@ -1,4 +1,7 @@
+<%= content_for :head do %>
+  <link href="https://js.radar.com/v4.4.2/radar.css" rel="stylesheet">
+  <script src="https://js.radar.com/v4.4.2/radar.min.js"></script>
+<% end %>
 <div class="container">
-  <input id="address-input" type="text" placeholder="123 main street..."></input>
-  <button id="address-submit" type="submit">Find Weather</button>
+  <%= render 'form' %>
 </div>
