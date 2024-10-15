@@ -1,2 +1,4 @@
-<%= @address %>
-<%= @postal_code %>
+<div class="container">
+  <a class="back" href="/" alt="Back to home page">«</a><div class="address"><%= @address %></div><img class="condition-icon" src="<%= @weather["current"]["condition"]["icon"] %>" alt="<%= @weather["current"]["condition"]["text"] %> icon.">
+  <div><span class="current-temp">Current temp:</span> <%= @weather["current"]["temp_f"] %> </div>
+</div>
