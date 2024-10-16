@@ -21,7 +21,7 @@ is used to look for a cached weather data response.
 
 # Development
 
-This microsite leverages Rails ecosystem as possible.
+This microsite leverages Rails ecosystem whenever possible.
 
 - Dartsass is used to manage stylesheets. They can be found in
   `app/assets/stylesheets`.
@@ -32,6 +32,8 @@ This microsite leverages Rails ecosystem as possible.
 - The server side keys are encrypted using Rails credentials.
 - The caching mechanism is generic through `Rails.cache` and can be configured
   to be backed by many different providers.
+- GitHub Workflows also provided out-of-the-box by `rails new`
+- Rubocop for linting and keeping things pretty.
 
 ## Getting Started
 
