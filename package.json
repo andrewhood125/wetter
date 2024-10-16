@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "maplibre-gl": "^4.7.1",
+    "radar-sdk-js": "^4.4.3"
+  }
+}
