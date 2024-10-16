@@ -1,5 +1,11 @@
 {
+  "name": "myapp",
+  "private": "true",
+  "scripts": {
+    "build": "esbuild app/javascript/*.* --bundle --sourcemap --format=esm --outdir=app/assets/builds --public-path=/assets"
+  },
   "dependencies": {
+    "esbuild": "^0.24.0",
     "maplibre-gl": "^4.7.1",
     "radar-sdk-js": "^4.4.3"
   }

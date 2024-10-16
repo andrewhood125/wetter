@@ -1,5 +1,5 @@
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 import Radar from 'radar-sdk-js'
+
 
 Radar.initialize('prj_test_pk_1703d6ed83e93d2c61f21dd3521a213d666e78f3')
 const autocomplete = document.querySelector('#autocomplete-address')
