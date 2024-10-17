@@ -11,9 +11,10 @@ body {
   text-align: center;
 }
 
+.well,
 .address {
   line-height: 1.6;
-  font-size: 20px;
+  font-size: 24px;
   padding: 0 10px;
   margin: 10px;
   display: inline-block;
@@ -69,6 +70,9 @@ body {
 
 #autocomplete-address a {
   color: #dedede;
+  text-decoration: none;
+  line-height: 2;
+  font-size: 20px;
 }
 
 .current-temp {
@@ -78,4 +82,38 @@ body {
 
 .condition-icon {
   vertical-align: bottom;
+}
+
+#logo-icon {
+  text-align: center;
+}
+
+#logo-icon img {
+  width: 150px;
+  mix-blend-mode: multiply;
+}
+
+#logo-icon img:hover {
+  mix-blend-mode: difference;
+  filter: drop-shadow(0px 0px 5px black);
+}
+
+#address-info {
+
+  font-size: 25px;
+  padding-left: 10px;
+  color: #d8d3cd;
+  text-shadow: 0px 1px 1px black;
+}
+
+#cached-indicator {
+  position: absolute;
+  top: -10px;
+  right: 7px;
+}
+
+#cached-indicator span {
+  color: #152627;
+  font-size: 31px;
+  text-shadow: none;
 }

@@ -1,12 +1,22 @@
 <div class="container">
-  <a class="back" href="/" alt="Back to home page">«</a>
-  <div class="address"><%= @address %></div>
-  <img class="condition-icon" 
-       src="<%= @weather["current"]["condition"]["icon"] %>" 
-       title="<%= @weather["current"]["condition"]["text"] %> icon."
-       alt="<%= @weather["current"]["condition"]["text"] %> icon.">
   <div>
-    <span class="current-temp">Current temp:</span> <%= @weather["current"]["temp_f"] %>
+    <a class="back" href="/" alt="Back to home page">«</a>
+    <div class="address">
+      <%= @address %>
+    </div>
   </div>
-  <div>Cached: <%= @cached %></div>
+  <div style="position: relative" class="well">
+      <% if @cached %>
+        <div id="cached-indicator">
+          <span title="The weather report was not renewed because it has been fetched within the last 30 minutes.">↺</span>
+        </div>
+      <% end %>
+    <img class="condition-icon" 
+         src="<%= @weather["current"]["condition"]["icon"] %>" 
+         title="<%= @weather["current"]["condition"]["text"] %> icon."
+         alt="<%= @weather["current"]["condition"]["text"] %> icon.">
+         <div>
+          <span class="current-temp">Current temp:</span> <%= @weather["current"]["temp_f"] %>
+         </div>
+  </div>
 </div>
